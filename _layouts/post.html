@@ -1,0 +1,8 @@
+---
+layout: default
+---
+<section>
+    <h1>{{ page.title | escape }}</h1>
+    {{ content }}
+    <p class="muted">{%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}Written on  {{ page.date | date: date_format }}</p>
+</section>
